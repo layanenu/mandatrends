@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<htm dir="ltr" lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MandaTrends</title>
     <style>
       body {
@@ -20,6 +20,13 @@
         background: -o-linear-gradient(left, #e8482a, #e72257);
         background: linear-gradient(to right, #e8482a, #e72257);
         color: #FFFFFF;
+        display: flex;
+        width: 100%;
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
     </style>
   </head>
@@ -29,38 +36,67 @@
 
       <header>
         <img src="assets/logo.svg" alt="Logomarca MandaTrends">
-        <img src="assets/lines.svg" alt="Linhas em direção diagonal">
-        <img src="assets/arrows.svg" alt="Logomarca MandaTrends">
-        <img src="assets/balls.svg" alt="Logomarca MandaTrends">
-        <img src="assets/woman.svg" alt="Logomarca MandaTrends">
-        <img src="assets/triangle.svg" alt="Logomarca MandaTrends">
+        <img src="assets/lines.svg" alt="Algumas linhas paralelas em direção diagonal">
+        <img src="assets/arrows.svg" alt="Algumas flechas apontadas para o lado direito">
+        <img src="assets/balls.svg" alt="Pequenas bolinhas">
+        <img src="assets/woman.svg" alt="Uma mulher sentada usando um megafone">
+        <img src="assets/triangle.svg" alt="Triângulo">
         <img src="assets/wave.svg" alt="Onda">
         <h1>NRF2020, Kobe Bryant e WhatsApp Payment</h1>
         <h2>edição 06</h2>
       </header>
 
       <main>
-        <article>
+        <article style="background-color: antiquewhite; width: 90%;">
+          <img 
+            src="assets/article-one-img.png" 
+            alt="Jennifer Walsh, fundadora da Walk with Walsh Media, 
+            Heather Deeth, gerente de compras éticas da Lush Cosmetics 
+            North America e Jennifer Gootman, vice-presidente de inovação 
+            social e vice-presidente de responsabilidade social corporativa 
+            da West Elm falam na NRF 2020 Vision: Retail's Big Show."
+            style="width: 100%;"
+            >
           <h1>NRF 2020: conheça os top 5 assuntos do evento.</h1>
           <h2>O maior evento sobre varejo do mundo mostrando as tendências, oportunidades e inovações para o setor.</h2>
           <p>Fonte: CMO ADOBE</p>
         </article>
 
-        <article>
-          <h1>Petição para colocar Kobe Bryant no logo da NBA.</h1>
-          <p>Fonte: Daily Mail</p>
-        </article>
+        <div style="display: flex; background-color: aquamarine; width: 90%;" >
+          <article style="background-color: #e8482a; width: 50%;">
+            <img 
+            src="assets/article-two-img.png" 
+            alt="Kobe Bean Bryant como logotipo da NBA (#MakeKobeTheLogo)"
+            style="width: 80%; height: 80%;"
+            >
+            <h1>Petição para colocar Kobe Bryant no logo da NBA.</h1>
+            <p>Fonte: Daily Mail</p>
+          </article>
 
-        <article>
-          <h1>WhatsApp terá função de pagamentos em 2020.</h1>
-          <p>Fonte: Proxxima</p>
-        </article>
+          <article style="background-color: rebeccapurple; width: 50%;">
+            <img 
+            src="assets/article-three-img.png" 
+            alt="Logomarca do WhatsApp"
+            style="width: 80%; height: 70%;"
+
+            
+            >
+            <h1>WhatsApp terá função de pagamentos em 2020.</h1>
+            <p>Fonte: Proxxima</p>
+          </article>
+        </div>
+
+        <img 
+        src="assets/design-for-shopper.svg" 
+        alt="Mandarim Design for Shopper">
 
       </main>
     </div>  
 
-    <footer>
-      <p> Copyright &reg; Mandarin. Todos os direitos reservados. Caso não deseje mais receber nossos e-mails, por favor <a href="#">clique aqui</a>.</p>
+    <footer style="width: 100%; display: flex; flex-direction: column; align-items: center; color: #656768;" >
+      <p> Copyright &reg; Mandarin. Todos os direitos reservados.
+      <p> Caso não deseje mais receber nossos e-mails, por favor <a href="#">clique aqui</a>.</p>
+      
     </footer>
   </body>
 </html>
