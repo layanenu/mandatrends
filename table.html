@@ -4,14 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet'>
     <title>MandaTrends</title>
     <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
       body {
         margin: 0;
         padding: 0% 2% 0% 2%;
         display: flex;
         flex-direction: column;
         background-color: #F2F2F2;
+        font-family: 'Arimo', sans-serif;
+      }
+      .container {
+        background-color: #FFFFFF;
+        padding-top: 30px;
       }
       header {
         background: -webkit-linear-gradient(left, #e8482a, #e72257);
@@ -21,79 +31,172 @@
         background: linear-gradient(to right, #e8482a, #e72257);
         color: #FFFFFF;
         display: flex;
+        box-sizing: border-box;
         width: 100%;
+        position: relative;
+      }
+      header .lines {
+        left: -130px;
+        top: 40px;
+        position: absolute;
       }
       header .logo {
         filter: brightness(100);
-        width: 25%;
+        width: 300px;
         position: absolute;
-        left: 120px;
+        left: 110px;
         top: 60px;
-      }
-      header .lines {
-        left: -100px;
-        top: 50px;
-        position: absolute;
-        z-index: 1;
       }
       header .balls {
         width: 60px;
         position: absolute;
-        left: 500px;
-        top: 200px;
-        color: #F2F2F2;
-
+        left: 420px;
+        top: 199px;
+      }
+      header .woman {
+        position: relative;
+        left: 900px;
+        /* position: absolute; */
+        top: 100px;
+      }
+      header .arrows {
+        position: absolute;
+        left: 900px;
+        transform: rotate(90deg);
+      }
+      header .triangle {
+        position: absolute;
+        right: 60px;
+        top: 15px;
+        transform: rotate(105deg);
+      }
+      header .wave {
+        position: absolute;
+        width: 100px;
+        right: 110px;
+        top: 210px;
+      }
+      header h1 {
+        position: absolute;
+        right: 100px;
+        text-align: right;
+        top: 30px;
+      }
+      header h2 {
+        position: absolute;
+        right: 100px;
+        text-align: right;
+        top: 160px;
+        font-size: 20px;
+      }
+      .article-one{
+        width: 90%;
+        margin-top: 50px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        /* z-index: -1; */
+      }
+      .article-one-img{
+        width: 100%;
+      }
+      .article-one-span-one{
+        color: #231F20;
+        font-size: 40px;
+        /* background-color: #e72257; */
+        width: 100%;
+        padding: 2% 0% 1% 0%;
+      }
+      .article-one-span-two{
+        color: #747879;
+        /* background-color: #e722; */
+        font-size: 20px;
+        width: 60%;
+      }
+      .article-one-span-three{
+        color: #B2B1B2;
+        /* background-color: #e722; */
+        font-size: 15px;
+        font-style: italic;
+        width: 100%;
+        padding: 0% 0% 2% 0%;
       }
       main {
         display: flex;
+        box-sizing: border-box;
         flex-direction: column;
         align-items: center;
+        margin: 0;
+      }
+      .container-article-two-and-three{
+        display: flex;
+        background-color: aquamarine;
+        width: 90%;
+        border-collapse: collapse;
+      }
+      .article-two{
+        background-color: #e8482a;
+        width: 50%;
+        position: relative;
+      }
+      .article-two-img{
+        width: 80%;
+        height: 80%;
+        /* height: 80%; */
+        position: absolute;
+        top: 0px;
       }
     </style>
   </head>
 
   <body>
-    <table style="width: 100%; border-collapse: collapse;">
+    <table>
       <tr>
-        <td style="background-color: #FFFFFF; padding-top: 30px;">
+        <td class="container">
           <header>
-            <img src="assets/logo.svg" alt="Logomarca MandaTrends" class="logo">
             <img src="assets/lines.svg" alt="Linhas paralelas em direção diagonal" class="lines">
+            <img src="assets/logo.svg" alt="Logomarca MandaTrends" class="logo">
             <img src="assets/balls.svg" alt="Pequenas bolinhas" class="balls">
-            <img src="assets/arrows.svg" alt="Flechas apontadas para o lado direito">
-            <img src="assets/woman.svg" alt="Uma mulher sentada falando em um megafone">
-            <img src="assets/triangle.svg" alt="Triângulo">
-            <img src="assets/wave.svg" alt="Onda">
-            <h1>NRF2020, Kobe Bryant e WhatsApp Payment</h1>
+            <img src="assets/arrows.svg" alt="Flechas apontadas para o lado direito" class="arrows">
+            <img src="assets/woman.svg" alt="Uma mulher sentada falando em um megafone" class="woman">
+            <img src="assets/triangle.svg" alt="Triângulo" class="triangle">
+            <img src="assets/wave.svg" alt="Onda" class="wave">
+            <h1>NRF2020, <br> Kobe Bryant e <br> WhatsApp Payment</h1>
             <h2>edição 06</h2>
           </header>
   
           <main>
-            <article style="background-color: antiquewhite; width: 90%;">
+            <article class="article-one">
               <img 
-              src="assets/article-one-img.png" 
-              alt="Jennifer Walsh, fundadora da Walk with Walsh Media, 
-              Heather Deeth, gerente de compras éticas da Lush Cosmetics 
-              North America e Jennifer Gootman, vice-presidente de inovação 
-              social e vice-presidente de responsabilidade social corporativa 
-              da West Elm falam na NRF 2020 Vision: Retail's Big Show."
-              style="width: 100%;z-index: 1000;position: relative;"
+                src="assets/article-one-img.png" 
+                alt="Jennifer Walsh, fundadora da Walk with Walsh Media, 
+                Heather Deeth, gerente de compras éticas da Lush Cosmetics 
+                North America e Jennifer Gootman, vice-presidente de inovação 
+                social e vice-presidente de responsabilidade social corporativa 
+                da West Elm falam na NRF 2020 Vision: Retail's Big Show."
+                class="article-one-img"
               >
-              <h1>NRF 2020: conheça os top 5 assuntos do evento.</h1>
-              <h2>O maior evento sobre varejo do mundo mostrando as tendências, oportunidades e inovações para o setor.</h2>
-              <p>Fonte: CMO ADOBE</p>
+              <span class="article-one-span-one">
+                NRF 2020: conheça os top 5 assuntos do evento.
+              </span>
+              <span class="article-one-span-two">
+                O maior evento sobre varejo do mundo mostrando as tendências, oportunidades e inovações para o setor.
+              </span>
+              <span class="article-one-span-three">Fonte: CMO ADOBE</span>
             </article>
   
-            <table style="display: flex; background-color: aquamarine; width: 90%; border-collapse: collapse;">
+            <table class="container-article-two-and-three">
               <tr>
-                <td style="background-color: #e8482a; width: 50%;">
+                <td class="article-two" style="background-color: #231F20;">
                   <img 
-                  src="assets/article-two-img.png" 
-                  alt="Kobe Bean Bryant como logotipo da NBA (#MakeKobeTheLogo)"
-                  style="width: 80%; height: 80%;"
+                    src="assets/article-two-img.png" 
+                    alt="Kobe Bean Bryant como logotipo da NBA (#MakeKobeTheLogo)"
+                    class="article-two-img"
                   >
-                  <h1>Petição para colocar Kobe Bryant no logo da NBA.</h1>
-                  <p>Fonte: Daily Mail</p>
+                  <span class="article-one-span-one">
+                    Petição para colocar Kobe Bryant no logo da NBA.
+                  </span>
+                  <span class="article-one-span-three">Fonte: Daily Mail</span>
                 </td>
                 <td style="background-color: rebeccapurple; width: 50%;">
                   <img 
@@ -106,18 +209,22 @@
                 </td>
               </tr>
             </table>
-            <img src="assets/design-for-shopper.svg" alt="Mandarim Design for Shopper">
           </main>
         </td>
       </tr>
-      <!-- <tr>
+      <td style="background-color:#FC4C01; display: flex; justify-content: center; width: 100%;">
+        <img
+          src="assets/design-for-shopper.svg" 
+          alt="Mandarim Design for Shopper">
+      </td>
+      <tr>
         <td style="width: 100%; display: flex; flex-direction: column; align-items: center; color: #656768;">
           <footer>
             <p> Copyright &reg; Mandarin. Todos os direitos reservados.
             <p> Caso não deseje mais receber nossos e-mails, por favor <a href="#">clique aqui</a>.</p>
           </footer>
         </td>
-      </tr> -->
+      </tr>
     </table>
   </body>
   
